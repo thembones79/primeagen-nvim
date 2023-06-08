@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-	  'rose-pine/neovim',
-	  as = 'rose-pine',
-	  config = function()
-		  vim.cmd('colorscheme rose-pine')
+      'morhetz/gruvbox',
+      as = 'gruvbox',
+      config = function()
+          vim.cmd('colorscheme gruvbox')
 	  end
   })
 
@@ -40,7 +40,6 @@ return require('packer').startup(function(use)
 				ts_update()
 			end,}
   use("nvim-treesitter/playground")
-  use("morhetz/gruvbox")
   use("theprimeagen/harpoon")
   use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
