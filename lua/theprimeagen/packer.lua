@@ -46,6 +46,16 @@ return require('packer').startup(function(use)
   use("numToStr/Comment.nvim")
   use("tpope/vim-fugitive")
   use("tpope/vim-surround")
+  use("mg979/vim-visual-multi")
+  use {
+      'jinh0/eyeliner.nvim',
+      config = function()
+          require'eyeliner'.setup {
+              highlight_on_key = true, -- show highlights only after keypress
+              dim = true              -- dim all other characters if set to true (recommended!)
+          }
+      end
+  }
   use("nvim-treesitter/nvim-treesitter-context");
   use {
 	  'VonHeikemen/lsp-zero.nvim',
