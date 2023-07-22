@@ -21,27 +21,27 @@ return require('packer').startup(function(use)
 	  end
   })
 
-  use({
-      "folke/trouble.nvim",
-      config = function()
-          require("trouble").setup {
-              icons = false,
-              -- your configuration comes here
-              -- or leave it empty to use the default settings
-              -- refer to the configuration section below
-          }
-      end
-  })
+  -- use({
+  --     "folke/trouble.nvim",
+  --     config = function()
+  --         require("trouble").setup {
+  --             icons = false,
+  --             -- your configuration comes here
+  --             -- or leave it empty to use the default settings
+  --             -- refer to the configuration section below
+  --         }
+  --     end
+  -- })
 
   use {
-			'nvim-treesitter/nvim-treesitter',
-			run = function()
-				local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
-				ts_update()
-			end,}
-  use("nvim-treesitter/playground")
+      'nvim-treesitter/nvim-treesitter',
+      run = function()
+          local ts_update = require('nvim-treesitter.install').update({ with_sync = true })
+          ts_update()
+      end,}
+  -- use("nvim-treesitter/playground")
   use("theprimeagen/harpoon")
-  use("theprimeagen/refactoring.nvim")
+  -- use("theprimeagen/refactoring.nvim")
   use("mbbill/undotree")
   use("numToStr/Comment.nvim")
   use("tpope/vim-fugitive")
@@ -56,7 +56,7 @@ return require('packer').startup(function(use)
           }
       end
   }
-  use("nvim-treesitter/nvim-treesitter-context");
+  -- use("nvim-treesitter/nvim-treesitter-context");
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v1.x',
@@ -87,10 +87,10 @@ return require('packer').startup(function(use)
 	  }
   }
 
-  use("folke/zen-mode.nvim")
-  use("github/copilot.vim")
+  -- use("folke/zen-mode.nvim")
+  -- use("github/copilot.vim")
   use("eandrju/cellular-automaton.nvim")
-  use("laytan/cloak.nvim")
+  -- use("laytan/cloak.nvim")
 
 end)
 
