@@ -13,7 +13,7 @@ vim.opt.wrap = false
 
 vim.opt.swapfile = false
 vim.opt.backup = false
-vim.opt.undodir =  "c:\\Users\\themb\\undodir"
+vim.opt.undodir =  "~/.vim/undodir/"
 vim.opt.undofile = true
 
 -- vim.opt.hlsearch = false
