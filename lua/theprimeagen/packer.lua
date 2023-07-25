@@ -47,6 +47,7 @@ return require('packer').startup(function(use)
   use("tpope/vim-fugitive")
   use("tpope/vim-surround")
   use("mg979/vim-visual-multi")
+  use("sbdchd/neoformat")
   use {
       'jinh0/eyeliner.nvim',
       config = function()
