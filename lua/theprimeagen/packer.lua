@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
       as = 'gruvbox',
       config = function()
           vim.cmd('colorscheme gruvbox')
+          vim.cmd('let gruvbox_bold=0')
+          vim.cmd('let gruvbox_italic=0')
+          vim.cmd('colorscheme kanagawa-dragon')
+          vim.cmd('colorscheme gruvbox')
 	  end
   })
 
