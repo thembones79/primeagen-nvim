@@ -1,4 +1,3 @@
-
 function ColorMyPencils(color)
 	color = color or "gruvbox"
 	vim.cmd.colorscheme(color)
@@ -8,4 +7,7 @@ function ColorMyPencils(color)
 
 end
 
-ColorMyPencils("gruvbox")
+if not vim.g.neovide then
+     ColorMyPencils("gruvbox")
+end
+

@@ -18,6 +18,10 @@ return require('packer').startup(function(use)
       as = 'gruvbox',
       config = function()
           vim.cmd('colorscheme gruvbox')
+          vim.cmd('let gruvbox_bold=0')
+          vim.cmd('let gruvbox_italic=0')
+          vim.cmd('colorscheme kanagawa-dragon')
+          vim.cmd('colorscheme gruvbox')
 	  end
   })
 
@@ -49,6 +53,10 @@ return require('packer').startup(function(use)
   use("tpope/vim-surround")
   use("mg979/vim-visual-multi")
   use("sbdchd/neoformat")
+  use("rose-pine/neovim")
+  use("sainnhe/gruvbox-material")
+  use("rebelot/kanagawa.nvim")
+  use("ajmwagar/vim-deus")
   use {
       'jinh0/eyeliner.nvim',
       config = function()
