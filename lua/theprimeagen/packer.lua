@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
   use("rose-pine/neovim")
   use("sainnhe/gruvbox-material")
   use("rebelot/kanagawa.nvim")
+  use("arturgoms/moonbow.nvim")
   use("ajmwagar/vim-deus")
   use {
       'jinh0/eyeliner.nvim',
