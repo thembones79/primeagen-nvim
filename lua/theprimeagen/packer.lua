@@ -14,7 +14,7 @@ return require('packer').startup(function(use)
   }
 
   use({
-      'morhetz/gruvbox',
+      'ellisonleao/gruvbox.nvim',
       as = 'gruvbox',
       config = function()
           vim.cmd('colorscheme gruvbox')
@@ -23,9 +23,14 @@ return require('packer').startup(function(use)
           vim.cmd('let gruvbox_contrast_dark="soft"')
           vim.cmd('colorscheme kanagawa-dragon')
           vim.cmd('colorscheme gruvbox')
-	  end
+      end
   })
 
+  require("gruvbox").setup({
+      bold = false,
+      contrast = "soft",
+  })
+  vim.cmd('colorscheme gruvbox')
   -- use({
   --     "folke/trouble.nvim",
   --     config = function()
