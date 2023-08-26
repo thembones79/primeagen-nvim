@@ -45,5 +45,10 @@ vim.cmd('let gruvbox_italic=0')
 vim.cmd('let gruvbox_contrast_dark="soft"')
 vim.cmd('colorscheme kanagawa-dragon')
 vim.cmd('colorscheme gruvbox')
+require("gruvbox").setup({
+    bold = false,
+    contrast = "soft",
+})
+vim.cmd('colorscheme gruvbox')
 
 
