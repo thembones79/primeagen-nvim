@@ -18,24 +18,9 @@ return require('packer').startup(function(use)
       as = 'gruvbox',
       config = function()
           vim.cmd('colorscheme gruvbox')
-          vim.cmd('let gruvbox_bold=0')
-          vim.cmd('let gruvbox_italic=0')
-          vim.cmd('let gruvbox_contrast_dark="soft"')
-          vim.cmd('colorscheme default')
-          vim.cmd('colorscheme gruvbox')
-          require("gruvbox").setup({
-              bold = false,
-              contrast = "soft",
-          })
-          vim.cmd('colorscheme gruvbox')
       end
   })
 
-  require("gruvbox").setup({
-      bold = false,
-      contrast = "soft",
-  })
-  vim.cmd('colorscheme gruvbox')
   -- use({
   --     "folke/trouble.nvim",
   --     config = function()
