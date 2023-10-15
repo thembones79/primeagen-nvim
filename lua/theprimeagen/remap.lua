@@ -50,10 +50,14 @@ vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "Q", ":!gacp ''<Left>")
 
 -- vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>ss", ":mks! ~/.vim/sessions/")
-vim.keymap.set("n", "<leader>sl", ":so ~/.vim/sessions/")
+vim.keymap.set("n", "<leader>ss", ":mks! ~/.vim/sessions/", { desc = 'Session Save to...' })
+vim.keymap.set("n", "<leader>sl", ":so ~/.vim/sessions/", { desc = 'Session Load from...' })
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.keymap.set("n", "<F4>", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/')
+vim.keymap.set("n", "gl", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/', { desc = 'Go save this session and LOAD from...' })
+vim.keymap.set("n", "g1", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/nvim-conf<CR>', { desc = 'Go to Nvim Config' })
+vim.keymap.set("n", "gs", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { desc = 'Go Save This Session' })
 
 
 -- See `:help telescope.builtin`
