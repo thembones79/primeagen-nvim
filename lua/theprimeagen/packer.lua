@@ -51,16 +51,7 @@ return require('packer').startup(function(use)
               }
           end
       }
-      use {
-          'nvim-lualine/lualine.nvim',
-          require('lualine').setup{
-              options = {
-                  icons_enabled = false,
-                  component_separators = '│',
-                  section_separators = '',
-              },
-          }
-      }
+      use("nvim-lualine/lualine.nvim")
       use("theprimeagen/harpoon")
       -- use("theprimeagen/refactoring.nvim")
       use("mbbill/undotree")
