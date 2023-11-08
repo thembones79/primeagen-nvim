@@ -55,7 +55,10 @@ vim.cmd('colorscheme gruvbox')
 require('lualine').setup{
     options = {
         icons_enabled = false,
-        component_separators = '|',
+        component_separators = '│',
         section_separators = '',
     },
 }
+
+
+require('leap').add_default_mappings()

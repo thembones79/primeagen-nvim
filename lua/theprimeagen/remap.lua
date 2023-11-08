@@ -56,7 +56,8 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 vim.keymap.set("n", "<F4>", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/')
 vim.keymap.set("n", "gl", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/', { desc = 'Go save this session and LOAD from...' })
-vim.keymap.set("n", "g1", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/nvim-conf<CR>', { desc = 'Go to Nvim Config' })
+vim.keymap.set("n", "g1", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/nvim<CR>', { desc = 'Go to Nvim Config' })
+vim.keymap.set("n", "g2", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/sway<CR>', { desc = 'Go to Nvim Config' })
 vim.keymap.set("n", "gs", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { desc = 'Go Save This Session' })
 
 

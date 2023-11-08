@@ -8,7 +8,7 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.0',
+	  'nvim-telescope/telescope.nvim', tag = '0.1.4',
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
@@ -51,22 +51,15 @@ return require('packer').startup(function(use)
               }
           end
       }
-      use {
-          'nvim-lualine/lualine.nvim',
-          require('lualine').setup{
-              options = {
-                  icons_enabled = false,
-                  component_separators = '|',
-                  section_separators = '',
-              },
-          }
-      }
+      use("nvim-lualine/lualine.nvim")
       use("theprimeagen/harpoon")
       -- use("theprimeagen/refactoring.nvim")
       use("mbbill/undotree")
       use("numToStr/Comment.nvim")
       use("tpope/vim-fugitive")
       use("tpope/vim-surround")
+      use("tpope/vim-repeat")
+      use("ggandor/leap.nvim")
       use("mg979/vim-visual-multi")
       use("sbdchd/neoformat")
       use("rose-pine/neovim")
