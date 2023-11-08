@@ -59,3 +59,6 @@ require('lualine').setup{
         section_separators = '',
     },
 }
+
+
+require('leap').add_default_mappings()
