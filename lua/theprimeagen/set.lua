@@ -49,7 +49,13 @@ require("gruvbox").setup({
     bold = false,
     contrast = "soft",
 })
-vim.cmd('colorscheme gruvbox')
+require("rose-pine").setup({
+    disable_italics = true,
+})
+require("mine-pine").setup({
+    disable_italics = true,
+})
+vim.cmd('colorscheme mine-pine')
 
 
 require('lualine').setup{
