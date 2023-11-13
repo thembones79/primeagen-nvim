@@ -39,12 +39,12 @@ vim.cmd("let g:neovide_transparency=0.9")
 -- vim.cmd("set guifont=FixedsysExcelsiorIIIb\\ Nerd\\ Font:h12")
 vim.cmd("set guifont=BigBlueTermPlus\\ Nerd\\ Font:h9")
 
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme mine-pine')
 vim.cmd('let gruvbox_bold=0')
 vim.cmd('let gruvbox_italic=0')
 vim.cmd('let gruvbox_contrast_dark="soft"')
 vim.cmd('colorscheme default')
-vim.cmd('colorscheme gruvbox')
+vim.cmd('colorscheme mine-pine')
 require("gruvbox").setup({
     bold = false,
     contrast = "soft",
