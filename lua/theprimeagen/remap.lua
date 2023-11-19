@@ -59,8 +59,8 @@ vim.keymap.set("n", "gl", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/
 vim.keymap.set("n", "g1", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/nvim<CR>', { desc = 'Go to Nvim Config' })
 vim.keymap.set("n", "g2", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/sway<CR>', { desc = 'Go to Nvim Config' })
 vim.keymap.set("n", "gs", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { desc = 'Go Save This Session' })
-vim.keymap.set("n", "99", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { desc = 'Go Save This Session' })
-vim.keymap.set("n", "11", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/', { desc = 'Go save this session and LOAD from...' })
+vim.keymap.set("n", "9", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { desc = 'Go Save This Session' })
+vim.keymap.set("n", "1", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/', { desc = 'Go save this session and LOAD from...' })
 
 
 -- See `:help telescope.builtin`
