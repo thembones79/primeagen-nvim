@@ -47,7 +47,14 @@ vim.cmd('colorscheme default')
 vim.cmd('colorscheme mine-pine')
 require("gruvbox").setup({
     bold = false,
-    contrast = "soft",
+    contrast = "hard",
+    italic = {
+        strings = false,
+        emphasis = false,
+        comments = false,
+        operators = false,
+        folds = false,
+    },
 })
 require("rose-pine").setup({
     disable_italics = true,
