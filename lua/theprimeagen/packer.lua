@@ -14,10 +14,10 @@ return require('packer').startup(function(use)
   }
 
   use({
-      'ellisonleao/gruvbox.nvim',
+      'thembones79/gruvbox.nvim',
       as = 'gruvbox',
       config = function()
-          vim.cmd('colorscheme gruvbox')
+          vim.cmd('colorscheme mine-pine')
       end
   })
 
@@ -63,6 +63,7 @@ return require('packer').startup(function(use)
       use("mg979/vim-visual-multi")
       use("sbdchd/neoformat")
       use("rose-pine/neovim")
+      use("thembones79/mine-pine")
       use("sainnhe/gruvbox-material")
       use("rebelot/kanagawa.nvim")
       use("arturgoms/moonbow.nvim")
