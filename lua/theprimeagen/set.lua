@@ -1,8 +1,9 @@
-
+vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
 
 vim.opt.cursorline = true
+vim.opt.cursorcolumn = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -47,7 +48,7 @@ vim.cmd('colorscheme default')
 vim.cmd('colorscheme mine-pine')
 require("gruvbox").setup({
     bold = false,
-    contrast = "hard",
+    -- contrast = "hard",
     italic = {
         strings = false,
         emphasis = false,
