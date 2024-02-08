@@ -1,4 +1,8 @@
 vim.keymap.set("n", "<leader>gs", vim.cmd.Git)
+vim.keymap.set("n", "<leader>ga", ":Git add . <CR>", { desc = 'Git Add All' });
+vim.keymap.set('n', '<leader>gw', function() builtin.grep_string({ search =
+    vim.fn.input("Grep > ") })
+end, { desc = "Find word" })
 
 local ThePrimeagen_Fugitive = vim.api.nvim_create_augroup("ThePrimeagen_Fugitive", {})
 
