@@ -68,6 +68,7 @@ return require('packer').startup(function(use)
       use("thembones79/mine-pine")
       use("sainnhe/gruvbox-material")
       use("rebelot/kanagawa.nvim")
+      use("Mofiqul/adwaita.nvim")
       use("arturgoms/moonbow.nvim")
       use("ajmwagar/vim-deus")
       use {
