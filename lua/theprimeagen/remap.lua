@@ -49,8 +49,8 @@ vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
 vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 vim.keymap.set("n", "Q", ":!gacp ''<Left>")
 
-vim.keymap.set("n", "<leader>a", ":let g:neovide_scale_factor=2.0", { desc = 'Bigger font' })
-vim.keymap.set("n", "<leader>c", ":let g:neovide_scale_factor=1.0", { desc = 'Smaller font' })
+vim.keymap.set("n", "<leader>a", ":let g:neovide_scale_factor=2.0<CR>", { desc = 'Bigger font' })
+vim.keymap.set("n", "<leader>c", ":let g:neovide_scale_factor=1.0<CR>", { desc = 'Smaller font' })
 
 vim.keymap.set("i", "{{{", "{}<Left><CR><Esc>O")
 vim.keymap.set("i", "[[[", "[]<Left><CR><Esc>O")
