@@ -70,6 +70,31 @@ vim.keymap.set("n", "-", ':wa<Bar>exe "mksession! " .. v:this_session<CR>', { de
 vim.keymap.set("n", "--", ':wa<Bar>exe "mksession! " .. v:this_session<CR>:so ~/.vim/sessions/', { desc = 'Go save this session and LOAD from...' })
 
 
+vim.keymap.set('n', '<leader>gx', function()
+    local message = vim.fn.input("Git Commit Message > ")
+    vim.cmd("Git add .")
+    vim.cmd("silent Git commit -m " .. message)
+    vim.cmd("Git push")
+end, { desc = "Git: add all, commit with message and push" })
+
+
+vim.keymap.set('n', '<leader>gc', function()
+    local branch = vim.fn.input("Git Branch Name to create > ")
+    vim.cmd("silent Git checkout -b " .. branch)
+end, { desc = "Git: checkout to NEW BRANCH" })
+
+
+vim.keymap.set('n', '<leader>ge', function()
+    vim.cmd("silent Git fetch")
+    vim.cmd("Git pull")
+end, { desc = "Git Fetch Pull" })
+
+
+vim.keymap.set('n', '<leader>g-', function()
+    vim.cmd("silent Git checkout -")
+end, { desc = "Git: checkout to Previous" })
+
+
 -- See `:help telescope.builtin`
 vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
 vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
