@@ -34,7 +34,7 @@ vim.opt.colorcolumn = "80"
 
 vim.cmd("set mouse=")
 
-vim.cmd("let g:neovide_transparency=0.9")
+vim.cmd("let g:neovide_transparency=0.95")
 -- vim.cmd("set guifont=BBT:h9")
 -- vim.cmd("set guifont=FantasqueSansMono\\ NF:h13")
 -- vim.cmd("set guifont=FixedsysExcelsiorIIIb\\ Nerd\\ Font:h12")
