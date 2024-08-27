@@ -55,9 +55,9 @@ vim.keymap.set("n", "<leader>c", ":let g:neovide_scale_factor=1.0<CR>", { desc =
 vim.keymap.set("i", "{{", "{}<Left><CR><Esc>O")
 vim.keymap.set("i", "[[", "[]<Left>")
 vim.keymap.set("i", "((", "()<Left>")
-vim.keymap.set("i", "`", "``<Left>")
-vim.keymap.set('i', '"', '""<Left>')
-vim.keymap.set("i", "'", "''<Left>")
+vim.keymap.set("i", "``", "``<Left>")
+vim.keymap.set('i', '""', '""<Left>')
+vim.keymap.set("i", "''", "''<Left>")
 
 -- vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>ss", ":mks! ~/.vim/sessions/", { desc = 'Session Save to...' })
