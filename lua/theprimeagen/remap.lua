@@ -24,6 +24,8 @@ vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
+vim.keymap.set("i", "<D>", "<C>")
+vim.keymap.set("n", "<D>", "<C>")
 
 
 -- Remove newbie crutches in Normal, Insert and Visual Mode
@@ -52,9 +54,13 @@ vim.keymap.set("n", "Q", ":!gacp ''<Left>")
 vim.keymap.set("n", "<leader>a", ":let g:neovide_scale_factor=2.0<CR>", { desc = 'Bigger font' })
 vim.keymap.set("n", "<leader>c", ":let g:neovide_scale_factor=1.0<CR>", { desc = 'Smaller font' })
 
-vim.keymap.set("i", "{{{", "{}<Left><CR><Esc>O")
-vim.keymap.set("i", "[[[", "[]<Left><CR><Esc>O")
-vim.keymap.set("i", "(((", "()<Left><CR><Esc>O")
+
+vim.keymap.set("i", "{{", "{}<Left><CR><Esc>O")
+vim.keymap.set("i", "[[", "[]<Left>")
+vim.keymap.set("i", "((", "()<Left>")
+vim.keymap.set("i", "''", "''<Left>")
+vim.keymap.set("i", "``", "``<Left>")
+vim.keymap.set('i', '""', '""<Left>')
 
 -- vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>ss", ":mks! ~/.vim/sessions/", { desc = 'Session Save to...' })

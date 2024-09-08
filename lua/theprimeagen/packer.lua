@@ -91,6 +91,7 @@ return require('packer').startup(function(use)
               {'neovim/nvim-lspconfig'},
               {'williamboman/mason.nvim'},
               {'williamboman/mason-lspconfig.nvim'},
+              -- { "ttytm/mason-lspconfig.nvim", branch = "ts-ls"},
 
               -- Autocompletion
               {'hrsh7th/nvim-cmp'},
