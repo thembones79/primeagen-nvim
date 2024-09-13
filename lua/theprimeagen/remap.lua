@@ -53,7 +53,7 @@ vim.keymap.set("n", "Q", ":!gacp ''<Left>")
 
 vim.keymap.set("n", "<leader>a", ":let g:neovide_scale_factor=2.0<CR>", { desc = 'Bigger font' })
 vim.keymap.set("n", "<leader>c", ":let g:neovide_scale_factor=1.0<CR>", { desc = 'Smaller font' })
-vim.keymap.set("n", "<leader>h", ":let g:neovide_scale_factor=1.5<CR>", { desc = 'Mid font' })
+vim.keymap.set("n", "<leader>h", ":let g:neovide_scale_factor=1.2<CR>", { desc = 'Mid font' })
 
 
 vim.keymap.set("i", "{{", "{}<Left><CR><Esc>O")
