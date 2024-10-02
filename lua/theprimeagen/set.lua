@@ -47,7 +47,7 @@ vim.cmd('let gruvbox_bold=0')
 vim.cmd('let gruvbox_italic=0')
 vim.cmd('let gruvbox_contrast_dark="soft"')
 vim.cmd('colorscheme default')
-vim.cmd('colorscheme mine-pine')
+vim.cmd('colorscheme mine-pine-moon')
 require("gruvbox").setup({
     bold = false,
     -- contrast = "hard",
