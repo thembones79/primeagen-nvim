@@ -52,6 +52,7 @@ return require('packer').startup(function(use)
           end
       }
       use("nvim-lualine/lualine.nvim")
+      -- use("mrcjkb/rustaceanvim")
       use("theprimeagen/harpoon")
       -- use("theprimeagen/refactoring.nvim")
       use("mbbill/undotree")
