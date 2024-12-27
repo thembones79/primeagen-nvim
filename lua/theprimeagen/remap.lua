@@ -57,7 +57,7 @@ vim.keymap.set("n", "<leader>h", ":let g:neovide_scale_factor=1.2<CR>", { desc =
 
 
 vim.keymap.set("i", "{", "{}<Left>")
-vim.keymap.set("i", "{<CR>", "{}<Left><CR><Esc>O")
+vim.keymap.set("i", "{{", "{}<Left><CR><Esc>O")
 vim.keymap.set("i", "[", "[]<Left>")
 vim.keymap.set("i", "(", "()<Left>")
 vim.keymap.set("i", "'", "''<Left>")
